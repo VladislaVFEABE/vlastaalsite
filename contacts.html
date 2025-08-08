@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — Жалюзи и шторы «День-Ночь»</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="promo-banner">
+    📏 ЗАМЕР И УСТАНОВКА — <strong>БЕСПЛАТНО</strong> | ⚡ ИЗГОТОВЛЕНИЕ — <strong>ЗА 1 ДЕНЬ</strong>
+  </div>
+  <div class="container">
+    <h1>ВЛАСТААЛ</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="calculator.html">Калькулятор</a>
+      <a href="about.html">Наши работы</a>
+      <a href="contacts.html" class="active">Контакты</a>
+      <a href="FAQ.html">Частые вопросы</a>
+    </nav>
+    <div class="header-logo-block">
+      <img src="img/logo.png" alt="Логотип" class="header-logo" />
+      <div class="header-phones">
+        <p>IDC (779) 75-107</p>
+        <p>MD (792) 44-958</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container contacts-page">
+  <h2>Свяжитесь с нами</h2>
+  <section class="contact-info">
+    <ul>
+      <li>
+        <strong>Адресa наших салонов:</strong>
+        <ul id="custom-address-list" class="address-list">
+          <li data-address="Бендеры, ул. Суворова 7">Бендеры, ул. Суворова 7</li>
+          <li data-address="Бендеры, ул. Суворова 4A">Бендеры, ул. Суворова 4A</li>
+          <li data-address="Тирасполь, стройт рынок Спутник бутик 134А">Тирасполь, стройт рынок Спутник бутик 134А</li>
+          <li data-address="Рыбница, ул. Ленина ТЦ Люкс">Рыбница, ул. Ленина ТЦ Люкс</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Контакты:<br></strong>  
+        <div class="phone-container">
+  <div class="phone-row">
+    <img src="img/idc.png" alt="" class="phone-icon" />
+    <span>(779) 75-107</span>
+  </div>
+  <div class="phone-row">
+    <img src="img/Moldcell.png" alt="" class="phone-icon" />
+    <span>(792) 44-958</span>
+  </div>
+</div>
+
+
+        <p>Мы в соцсетях:</p>
+        <div class="social-links-colored">
+          <a href="https://vk.com/id406998451" target="_blank" class="vk" aria-label="ВКонтакте"></a>
+          <a href="https://www.ok.ru/profile/575950713317" target="_blank" class="ok" aria-label="Одноклассники"></a>
+          <a href="https://www.instagram.com/official_vlastaal" target="_blank" class="instagram" aria-label="Instagram"></a>
+          <a href="https://www.facebook.com/share/1DoJKLM3SM/" target="_blank" class="facebook" aria-label="Facebook"></a>
+          <a href="https://www.tiktok.com/@vlastaal" target="_blank" class="tiktok" aria-label="TikTok"></a>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- Модальное окно -->
+<div id="custom-modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title" class="custom-modal-hidden">
+  <div class="custom-modal-box">
+    <button class="custom-modal-close-btn" aria-label="Закрыть модальное окно">&times;</button>
+    <h3 id="modal-title" class="modal-title">Адрес на карте</h3>
+    <div id="custom-map-container"></div>
+  </div>
+</div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-E_4csCTPfftm7K6BQYcaGOukXueRBrc"></script>
+<script src="js/contacts-map.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
